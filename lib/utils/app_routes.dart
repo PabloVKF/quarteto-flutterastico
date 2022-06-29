@@ -5,4 +5,6 @@ class AppRoutes {
   static const BARCHART = '/bar-chart';
   // ignore: constant_identifier_names
   static const PIECHART = '/pie-chart';
+  // ignore: constant_identifier_names
+  static const LINECHART = '/line-chart';
 }

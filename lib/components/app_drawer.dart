@@ -35,11 +35,21 @@ class AppDrawer extends StatelessWidget {
           ),
           const Divider(),
           ListTile(
-            leading: const Icon(Icons.bar_chart),
+            leading: const Icon(Icons.pie_chart),
             title: const Text('PieChart'),
             onTap: () {
               Navigator.of(context).pushReplacementNamed(
                 AppRoutes.PIECHART,
+              );
+            },
+          ),
+          const Divider(),
+          ListTile(
+            leading: const Icon(Icons.line_axis),
+            title: const Text('LineChart'),
+            onTap: () {
+              Navigator.of(context).pushReplacementNamed(
+                AppRoutes.LINECHART,
               );
             },
           ),
