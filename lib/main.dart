@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_graph/pages/barchart_example.dart';
 import 'package:flutter_graph/pages/main_page.dart';
+import 'package:flutter_graph/pages/piechart_example.dart';
 import 'package:flutter_graph/utils/app_routes.dart';
 
 void main() {
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
       routes: {
         AppRoutes.HOME: (ctx) => const HomePage(),
         AppRoutes.BARCHART: (ctx) => const BarChartPage(),
+        AppRoutes.PIECHART: (ctx) => const PieChartPage()
       },
     );
   }
