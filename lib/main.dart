@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_graph/pages/barchart_example.dart';
 import 'package:flutter_graph/pages/main_page.dart';
+import 'package:flutter_graph/utils/app_routes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,8 +18,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomePage(),
       debugShowCheckedModeBanner: false,
+      routes: {
+        AppRoutes.HOME: (ctx) => const HomePage(),
+        AppRoutes.BARCHART: (ctx) => const BarChartPage(),
+      },
     );
   }
 }

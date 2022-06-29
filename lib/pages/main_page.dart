@@ -1,24 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_graph/components/developer_chart.dart';
-import 'package:flutter_graph/data/dummy_data.dart';
+import 'package:flutter_graph/components/app_drawer.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final data = dummyData;
     return Scaffold(
       appBar: AppBar(
-        title: Text('Meu aplicativo'),
+        title: const Text('Meu aplicativo'),
       ),
-      body: Center(
-        child: Center(
-          child: DeveloperChart(
-            data: data,
-          ),
-        ),
+      body: const Center(
+        child: Text('oi'),
       ),
+      drawer: const AppDrawer(),
     );
   }
 }
